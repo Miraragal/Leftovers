@@ -1,0 +1,22 @@
+body{
+    font-family: "Open Sans",sans-serif;
+}
+
+h1{
+    font-family:'Limelight', cursive;
+}
+
+#heading { color:#454140; }
+
+.navbar{
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+
+
+}
+
+.jumbotron{
+    padding: 80px;
+    background-color;:#00a59b);
+}
