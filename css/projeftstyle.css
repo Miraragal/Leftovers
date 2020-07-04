@@ -6,17 +6,98 @@ h1{
     font-family:'Limelight', cursive;
 }
 
-#heading { color:#454140; }
+h6{
+    font-family:'Limelight', cursive;
+    font-size: small;
+    font-style: inherit;
+
+
+}
+#brown { color:#454140; }
+#blue { color:#8EB1C7}
+#red {color: #EB4511}
+#silver {color: #C1BFB5}
+#white {color:#FEFDFF}
+#verde {color:#00a59b }
+#naranja {color:#f7a11a}
+
 
 .navbar{
     margin: 0;
     padding: 10px;
     font-size: 18px;
+    background-color:#FEFDFF;
+}
+  
+.dropdown .dropbtn {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    background-color:#FEFDFF;
+    color:#454140;    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFDFF;
+    min-width: auto;
+    z-index: 1;
+    border-radius: 5px;
+  } 
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align:left;
+    color: #454140;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-color: #8EB1C7;
+  }  
+  
+  #checkout{
+      background-color:#5eb9b3; 
+    }
+    #checkout:hover{
+        background-color: #00a59b;
+    }
+    #cart{
+        background-color:#e2af5c ;
+    }
+    #cart:hover{
+        background-color:#f7a11a;
+    }
 
 
+    #jumbotron1{
+    
+        background-color:#8EB1C7;
+        font-size: 18px;
+    }
+
+.form-content {
+    background-color: white;
 }
 
-.jumbotron{
-    padding: 80px;
-    background-color;:#00a59b);
-}
+
+
+    #jumbotron2{
+        padding: 50px;
+        background-color:#EB4511;
+    }
+    
+    .site-footer {
+        margin: 0;
+        padding: 80px;
+        font-size: 12px;
+        color: #454140;
+        text-align:left;
+        position: botton;
+    }
+    
+    a {
+        color:#454140;
+    }

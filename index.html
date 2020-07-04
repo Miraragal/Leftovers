@@ -12,8 +12,8 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@400;800&display=swap" />
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@400;800&display=swap" />
     <link rel="stylesheet" href="css/projeftstyle.css" />
 
 
@@ -24,42 +24,90 @@
 
     <title>Leftovers</title>
     <style>
-        #heading { color:#454140; }
+        #brown {
+            color: #454140;
+        }
+
+        #blue {
+            color: #8EB1C7;
+        }
+
+        #red {
+            color: #EB4511
+        }
+
+        #silver {
+            color: #C1BFB5
+        }
+
+        #white {
+            color: #FEFDFF
+        }
+
+        #verde {
+            color: #00a59b
+        }
+
+        #naranja {
+            color: #f7a11a
+        }
     </style>
 
 
 </head>
 
 <body>
-
+<!--Navbar-->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light  sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img class="align-self-center" src="images/Logo.png" height="60" width="60" /></a>
-                <h1 id=heading class="mt-3">LEFTOVERS</h1>
+                <a class="navbar-brand" href="#"><img class="align-self-center" src="images/Logo.png" height="60"
+                        width="60" /></a>
+                <h1 id="brown" class="mt-3">LEFTOVERS</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Landingpage">
                     <span class="navbar-toggler-icon">
                     </span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="Landingpage">
-                    <ul class="navbar-nav" id="heading">
+                <div class="collapse navbar-collapse d-flex-md justify-content-end" id="Landingpage">
+                    <ul class="navbar-nav" id="brown">
                         <!--Members-->
-                        <li class="nav-item"><a class="nav-link" href="#">
-                                <i class="fa fa-user fa-lg px-3" ></i></a>
+                        <li class="dropdown">
+                            <button class="dropbtn btn btn-link"><i class="fa fa-user fa-lg px-3"></i>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item"><strong>Sign in</strong></a>
+                                    <hr />
+                                    <a href="#">My account</a>
+                                    <a href="#">My orders</a>
+                                    <a href="#">Contact preferences</a>
+                                </div>
+                            </button>
                         </li>
                         <!--Favorites-->
-                        <li class="nav-item"><a class="nav-link" href="#">
-                                <i class="fa fa-star fa-lg px-3"></i></a>
-                        </li>
+                        <li class="nav-item active"><a class="nav-link" id="brown" href="#">
+                                <i class="fa fa-star fa-lg px-3"></i>
+                            </a></li>
                         <!--Checkout-->
-                        <li class="nav-item"><a class="nav-link" href="#">
-                                <i class="fa fa-shopping-cart fa-lg px-3"></i></a>
+                        <li class="dropdown">
+                            <button class="dropbtn btn btn-link"><i class="fa fa-shopping-cart fa-lg px-3"></i>
+                                <div class="dropdown-content">
+                                    <div class="card">
+                                        <h5 class="card-header"><strong>My cart</strong></h5>
+                                        <div class="card-body">
+                                            <h5 class="card-title align-self-center">Enjoy your food!</h5>
+                                            <a href="#" class="btn btn-lg btn-block text-center" id="cart">View cart</a>
+                                            <a href="#" class="btn btn-lg btn-block text-center"
+                                                id="checkout">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
                         </li>
                         <!--Search-->
                         <form class="form-inline px-3">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Discover"
+                            <input class="form-control mr-sm-2 col-6 col-sm-8" type="search" placeholder="Search"
                                 aria-label="Search">
-                            <button class="btn btn-outline my-2 my-sm-0" type="submit"id="heading"><i
+                            <button class="btn btn-outline my-2 my-sm-0" type="submit" id="heading"><i
                                     class="fa fa-search fa-md"></i></button>
                         </form>
                     </ul>
@@ -67,12 +115,148 @@
 
         </nav>
     </header>
-    <div class="jumbotron jumbotron-fluid">
+<!--Firt content Form + Carousel -->
+    <div class="jumbotron jumbotron-fluid" id="jumbotron1">
         <div class="container">
+            <div class="row">
+                <h2 class="col-12 text-center" id="brown"><strong>Discover and book the best food</strong> </h2>
+            </div>
+            <br />
+            <br />
 
+            <div class="row">
+                <div class="col mx-auto">
+                    <div class="p-3 mt-5 bg-light">
+                        <form>
+                            <div class="form-group" id="brown">
+                                <label for="where"><i class="fa fa-map-marker"></i> Where</label>
+                                <input type="text" class="form-control form-control-sm" id="what"
+                                    placeholder="Near me, ZIP, exact address...">
+                            </div>
+                            <div class="form-group" id="brown">
+                                <label for="What"><i class="fa fa-cutlery" aria-hidden="true"></i> What</label>
+                                <input type="text" class="form-control form-control-sm" id="where"
+                                    aria-describedby="whereToEat" placeholder="Cuisine,restaurant name...">
+                                <small id="whereToEat" class="form-text text-muted">Check out our selection and don't miss
+                                    the best
+                                    deals</small>
+                            </div>
+                        </form>
+
+                    </div>
+                
+                </div>
+
+                <div class="col mx-auto">
+
+                    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#homeCarousel" data-slide-to="1"></li>
+                            <li data-target="#homeCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/images/appetiazer.jpg" alt="First step" />
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/appetiazer.jpg" alt="Second step" />
+
+                            </div>
+
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/appetiazer.jpg" alt="Third step" />
+
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+<!--Second content  -->
+    <div class="jumbotron jumbotron-fluid" id="jumbotron2">
+        <div class="container">
+            <h2 id="brown">LEFTOVERS selections</h2>
         </div>
     </div>
 
+
+
+
+
+
+<!--Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h6>General</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h6>Discover</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Grocery Stores</a></li>
+                        <li><a href="#">Bakeries</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h6>For Business</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Leftovers and Business</a></li>
+                        <li><a href="#">Content Guidelines</a></li>
+                        <li><a href="#">Ad Choices</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h6>Follow Us</h6>
+                    <div class="col">
+                        <a class="btn btn-social-icon btn-xs" href="http://instagram.com/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a class="btn btn-social-icon btn-xs" href="http://facebook.com/"><i
+                                class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </div>
+                    <br>
+                    <h6>Languages</h6>
+                    <div class="form-check form-check-inline">
+                        <select class="custom-select" id="inputGroupSelect03">
+                            <option selected>Choose...</option>
+                            <option value="1">English</option>
+                            <option value="2">Spanish</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer-->
 
 
 
