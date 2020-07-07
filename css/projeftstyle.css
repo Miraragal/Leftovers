@@ -10,9 +10,15 @@ h6{
     font-family:'Limelight', cursive;
     font-size: small;
     font-style: inherit;
-
-
 }
+
+h2{
+    font-family:'Limelight', cursive;
+    font-size: 10;
+    
+}
+
+
 #brown { color:#454140; }
 #blue { color:#8EB1C7}
 #red {color: #EB4511}
@@ -70,24 +76,34 @@ h6{
     #cart:hover{
         background-color:#f7a11a;
     }
-
-
-    #jumbotron1{
     
+    #jumbotron1{
+        
         background-color:#8EB1C7;
-        font-size: 18px;
+        font-size: 20px;
+        margin: 0;
     }
 
-.form-content {
-    background-color: white;
-}
-
-
-
-    #jumbotron2{
-        padding: 50px;
-        background-color:#EB4511;
+    .form-content {
+        background-color: white;
+        color: white;
+        height: fit-content;
+        width: fit-content;
+        
     }
+    
+    .carousel-item{
+        height: fit-content;
+        width: fit-content;
+        
+    }
+
+     #square1{
+        
+                background-color:#454140; 
+                padding: 50px;
+            }
+    
     
     .site-footer {
         margin: 0;

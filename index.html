@@ -57,7 +57,7 @@
 </head>
 
 <body>
-<!--Navbar-->
+    <!--Navbar-->
     <header>
         <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <div class="container">
@@ -115,40 +115,32 @@
 
         </nav>
     </header>
-<!--Firt content Form + Carousel -->
+    <!--Firt content Form + Carousel -->
     <div class="jumbotron jumbotron-fluid" id="jumbotron1">
+
         <div class="container">
-            <div class="row">
-                <h2 class="col-12 text-center" id="brown"><strong>Discover and book the best food</strong> </h2>
-            </div>
-            <br />
-            <br />
-
-            <div class="row">
-                <div class="col mx-auto">
-                    <div class="p-3 mt-5 bg-light">
-                        <form>
-                            <div class="form-group" id="brown">
-                                <label for="where"><i class="fa fa-map-marker"></i> Where</label>
-                                <input type="text" class="form-control form-control-sm" id="what"
-                                    placeholder="Near me, ZIP, exact address...">
-                            </div>
-                            <div class="form-group" id="brown">
-                                <label for="What"><i class="fa fa-cutlery" aria-hidden="true"></i> What</label>
-                                <input type="text" class="form-control form-control-sm" id="where"
-                                    aria-describedby="whereToEat" placeholder="Cuisine,restaurant name...">
-                                <small id="whereToEat" class="form-text text-muted">Check out our selection and don't miss
-                                    the best
-                                    deals</small>
-                            </div>
-                        </form>
-
-                    </div>
-                
+            <div class="row row-content align-item-center">
+                <div class="col-12 col-md-6 mx-auto">
+                    <h2 class="col text-center" id="brown"><strong>Discover and book the best food</strong> </h2>
+                    <form>
+                        <div class="form-group" id="brown">
+                            <label for="where"><i class="fa fa-map-marker"></i> Where</label>
+                            <input type="text" class="form-control form-control-sm" id="what"
+                                placeholder="Near me, ZIP, exact address...">
+                        </div>
+                        <div class="form-group" id="brown">
+                            <label for="What"><i class="fa fa-cutlery" aria-hidden="true"></i> What</label>
+                            <input type="text" class="form-control form-control-sm" id="where"
+                                aria-describedby="whereToEat" placeholder="Cuisine,restaurant name...">
+                            <small id="whereToEat" class="form-text text-muted">Check out our selection and don't miss
+                                the best
+                                deals</small>
+                        </div>
+                        <button type="submit" class="col-md-12 btn btn-warning text-uppercase text-center"
+                            id="brown"><strong>Search</strong></button>
+                    </form>
                 </div>
-
-                <div class="col mx-auto">
-
+                <div class="col-12 col-md-6 align-self-center">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -156,25 +148,18 @@
                             <li data-target="#homeCarousel" data-slide-to="2"></li>
                             <li data-target="#homeCarousel" data-slide-to="3"></li>
                         </ol>
-
                         <div class="carousel-inner">
-
                             <div class="carousel-item active">
                                 <img class="d-block w-100" src="/images/1-1.png" alt="Steps" />
                             </div>
-
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="/images/2-2.png" alt="First step" />
-
                             </div>
-
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="/images/3-3.png" alt="Secondstep" />
-
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="/images/4-4.png" alt="Third  step" />
-
                             </div>
                         </div>
 
@@ -192,17 +177,79 @@
 
             </div>
         </div>
-
-
-
-
     </div>
 
-<!--Second content  -->
-    <div class="jumbotron jumbotron-fluid" id="jumbotron2">
-        <div class="container">
-            <h2 id="brown">LEFTOVERS selections</h2>
+    <!--Second content  -->
+
+    <div class="container">
+
+        <div class="row row-content align-items-center">
+            <div class="col-md-12 text-right">
+                <h2 id="brown">Ours Selections</h2>
+
+                <nav aria-label="selections">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a class="page-link" href="#" tabindex="-1"><i
+                                class="fa fa-chevron-left" id="brown"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i
+                                class="fa fa-chevron-right" id="brown"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <div class="row row-content align-items-center mx-0">
+            <div class="col-3 mx-auto">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/pizza.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 mx-auto">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/pizza.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>   
+            <div class="col-3 mx-auto">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/pizza.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-3 ">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="/images/pizza.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+
+
+            </div>
+
+
+
+
+
     </div>
 
 
@@ -210,7 +257,11 @@
 
 
 
-<!--Footer-->
+
+
+
+
+    <!--Footer-->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
