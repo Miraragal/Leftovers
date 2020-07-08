@@ -6,7 +6,7 @@ h1{
     font-family:'Limelight', cursive;
 }
 
-h6{
+h5{
     font-family:'Limelight', cursive;
     font-size: small;
     font-style: inherit;
@@ -16,6 +16,13 @@ h2{
     font-family:'Limelight', cursive;
     font-size: 10;
     
+}
+
+h3{    
+    font-family: "Open Sans",sans-serif;
+    font-size: 15;
+    font-style: inherit;
+    text-align: left;
 }
 
 
@@ -97,16 +104,28 @@ h2{
         width: fit-content;
         
     }
+
+    .media{
+        font-size: small;
+    }
+
+    #bssCard{
+        background-color:#454140 ;
+        color: silver;
+        display: flex;
+    }
+    
+   
+
     
     .site-footer {
         margin: 0;
-        padding: 80px;
+        padding: 10px;
         font-size: 12px;
         color: #454140;
         text-align:left;
         position: botton;
     }
-    
     a {
         color:#454140;
     }
