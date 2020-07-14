@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@400;800&display=swap" />
+    <link rel="stylesheet" href="css/projeftstyle.css" />
+    <link rel="stylesheet" href="/path/to/slick.css">
+    <link rel="stylesheet" href="/path/to/slick-theme.css">
+
+
+
+    <title>Leftovers</title>
+    <style>
+        #brown {
+            color: #454140;
+        }
+
+        #blue {
+            color: #8EB1C7;
+        }
+
+        #red {
+            color: #EB4511
+        }
+
+        #silver {
+            color: #C1BFB5
+        }
+
+        #white {
+            color: #FEFDFF
+        }
+
+        #verde {
+            color: #00a59b
+        }
+
+        #naranja {
+            color: #f7a11a
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--Navbar-------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img class="align-self-center" src="images/Logo.png"
+                        height="60" width="60" /></a>
+                <h1 id="brown" class="mt-3">LEFTOVERS</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Landingpage">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse d-flex-md justify-content-end" id="Landingpage">
+                    <ul class="navbar-nav" id="brown">
+                        <!--Search-->
+                        <form class="form-inline px-0">
+                            <input class="form-control mr-sm-2 col-10 col-sm-8" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline my-2 my-sm-0" type="submit" id="heading"><i
+                                    class="fa fa-search fa-md"></i></button>
+                        </form>
+                        <!--Members-->
+                        <li class="dropdown">
+                            <button class="dropbtn btn btn-link"><i class="fa fa-user fa-lg px-3"></i>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-divider"></div>
+                                    <a href="/login.html" class="dropdown-item"><strong>Sign in</strong></a>
+                                    <hr />
+                                    <a href="#">My account</a>
+                                    <a href="#">My orders</a>
+                                    <a href="#">Contact preferences</a>
+                                </div>
+                            </button>
+                        </li>
+                        <!--Favorites-->
+                        <li class="nav-item active"><a class="nav-link" id="brown" href="/favorites.html">
+                                <i class="fa fa-star fa-lg px-3"></i>
+                            </a></li>
+                        <!--Checkout-->
+                        <li class="dropdown">
+                            <button class="dropbtn btn btn-link"><i class="fa fa-shopping-cart fa-lg px-3"></i>
+                                <div class="dropdown-content">
+                                    <div class="card">
+                                        <p class="card-header"><strong>My cart</strong></p>
+                                        <div class="card-body">
+                                            <p class="card-title align-self-center">Enjoy your food!</p>
+                                            <a href="#" class="btn btn-lg btn-block text-center" id="cart">View cart</a>
+                                            <a href="#" class="btn btn-lg btn-block text-center"
+                                                id="checkout">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+        </nav>
+    </header>
+    <br />
+    <br />
+
+    <!-- Fav container------------------------>
+    <div class="container" id="favorites">
+        <img src="/images/happyfilter.png" alt="favorites" style="width:100%;">
+        <div class="centered">
+            <h2 class="text-center">No favorites yet</h2>
+            <p>Don't worry! Below are some recomendations for you</p>
+        </div>
+
+    </div>
+
+    <!-- Jumbotron Inspiration--------------->
+    <div class="jumbotron jumbotron-fluid" id="jumbotronFav2">
+        <div class="container d-none d-md-block">
+            <div class=row>
+                <h2 class="col-12 text-left" id="brown">Popular near you</h2>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset1.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset2.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset3.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset9.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset4.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="images/image-asset5.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset6.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+                <div class="col-6 col-sm-3">
+                    <img src="/images/image-asset8.jpeg" class="img-fluid mx-2" style="height: 15rem; width: 15rem;"
+                        alt="Responsive image">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Footer--------------------------------->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>General</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/SignIn.html">Sign Up</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Discover</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Grocery Stores</a></li>
+                        <li><a href="#">Bakeries</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>For Business</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/business.html">Leftovers and Business</a></li>
+                        <li><a href="/business.html">Content Guidelines</a></li>
+                        <li><a href="/business.html">Ad Choices</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Follow Us</h5>
+                    <div class="col">
+                        <a class="btn btn-social-icon btn-xs" href="http://instagram.com/"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a class="btn btn-social-icon btn-xs" href="http://facebook.com/"><i
+                                class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </div>
+                    <br>
+                    <h5>Languages</h5>
+                    <div class="form-check form-check-inline">
+                        <select class="custom-select" id="inputGroupSelect03">
+                            <option selected>Choose...</option>
+                            <option value="1">English</option>
+                            <option value="2">Spanish</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- build:js js/main.js -->
+    <script src="/path/to/jquery.min.js"></script>
+    <script src="/path/to/slick.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+
+</body>
+
+</html>

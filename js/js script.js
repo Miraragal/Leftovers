@@ -11,3 +11,7 @@ $('.one-time').slick({
     slidesToScroll: 1,
     touchMove: false
   });
+
+  
+
+

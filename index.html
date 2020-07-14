@@ -57,7 +57,7 @@
 <body>
     <!--Navbar-------------------------------->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img class="align-self-center" src="images/Logo.png" height="60"
                         width="60" /></a>
@@ -68,12 +68,19 @@
                 </button>
                 <div class="collapse navbar-collapse d-flex-md justify-content-end" id="Landingpage">
                     <ul class="navbar-nav" id="brown">
+                        <!--Search-->
+                        <form class="form-inline px-0">
+                            <input class="form-control mr-sm-2 col-10 col-sm-8" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline my-2 my-sm-0" type="submit" id="heading"><i
+                                    class="fa fa-search fa-md"></i></button>
+                        </form>
                         <!--Members-->
                         <li class="dropdown">
                             <button class="dropbtn btn btn-link"><i class="fa fa-user fa-lg px-3"></i>
                                 <div class="dropdown-content">
                                     <div class="dropdown-divider"></div>
-                                    <a href="#" class="dropdown-item"><strong>Sign in</strong></a>
+                                    <a href="/login.html" class="dropdown-item"><strong>Sign in</strong></a>
                                     <hr />
                                     <a href="#">My account</a>
                                     <a href="#">My orders</a>
@@ -82,7 +89,7 @@
                             </button>
                         </li>
                         <!--Favorites-->
-                        <li class="nav-item active"><a class="nav-link" id="brown" href="#">
+                        <li class="nav-item active"><a class="nav-link" id="brown" href="/favorites.html">
                                 <i class="fa fa-star fa-lg px-3"></i>
                             </a></li>
                         <!--Checkout-->
@@ -90,9 +97,9 @@
                             <button class="dropbtn btn btn-link"><i class="fa fa-shopping-cart fa-lg px-3"></i>
                                 <div class="dropdown-content">
                                     <div class="card">
-                                        <h5 class="card-header"><strong>My cart</strong></h5>
+                                        <p class="card-header"><strong>My cart</strong></p>
                                         <div class="card-body">
-                                            <h5 class="card-title align-self-center">Enjoy your food!</h5>
+                                            <p class="card-title align-self-center">Enjoy your food!</p>
                                             <a href="#" class="btn btn-lg btn-block text-center" id="cart">View cart</a>
                                             <a href="#" class="btn btn-lg btn-block text-center"
                                                 id="checkout">Checkout</a>
@@ -101,20 +108,17 @@
                                 </div>
                             </button>
                         </li>
-                        <!--Search-->
-                        <form class="form-inline px-3">
-                            <input class="form-control mr-sm-2 col-6 col-sm-8" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button class="btn btn-outline my-2 my-sm-0" type="submit" id="heading"><i
-                                    class="fa fa-search fa-md"></i></button>
-                        </form>
                     </ul>
                 </div>
 
         </nav>
     </header>
+    <br />
+    <br />
     <!-- Jumbotron: Form + Carousel------------->
     <div class="jumbotron jumbotron-fluid" id="jumbotron1">
+        <br />
+        <br />
         <div class="container">
             <div class="row row-content align-item-center">
                 <div class="col-12 col-md-6 mx-auto">
@@ -156,7 +160,7 @@
                                 <img class="d-block w-100" src="/images/3.png" alt="Secondstep" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="images/4.png" alt="Third  step" />
+                                <img class="d-block w-100" src="/images/4.png" alt="Third  step" />
                             </div>
                         </div>
 
@@ -167,6 +171,7 @@
 
             </div>
         </div>
+        <br />
     </div>
     <!--Carousel Wrap: Our selections--------->
     <br />
@@ -311,155 +316,156 @@
 
     </div>
     <br />
-  <!--Carousel Wrap: Choosen for you--------->
-  <br />
-  <div class="container">
-      <div id="multi-selections" class="carousel slide carousel-multi-item" data-ride="carousel">
-          <div class="col-md-12 text-right">
-              <h2 id="brown">Choosen for you</h2>
-              <!--Controls-->
-              <div class="controls-top justify-content-end">
-                  <a class="btn btn-outline" id="brown" href="#multi-selections" data-slide="prev"><i
-                          class="fa fa-chevron-left fa-lg"></i></a>
-                  <a class="btn btn-outline" id="brown" href="#multi-selections" data-slide="next"><i
-                          class="fa fa-chevron-right fa-lg"></i></a>
-              </div>
-          </div>
-          <br />
-          <!--/.Controls-->
-          <div class="carousel-inner" role="listbox">
-              <!--First slide-->
-              <div class="carousel-item active">
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/Melting pop.jpg">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">The Melting Pot</h4>
-                              <br />
-                              <p class="card-text">CUISINES: American.
-                              </p>
-                              <br />
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+    <!--Carousel Wrap: Choosen for you--------->
+    <br />
+    <div class="container">
+        <div id="multi-selections" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <div class="col-md-12 text-right">
+                <h2 id="brown">Choosen for you</h2>
+                <!--Controls-->
+                <div class="controls-top justify-content-end">
+                    <a class="btn btn-outline" id="brown" href="#multi-selections" data-slide="prev"><i
+                            class="fa fa-chevron-left fa-lg"></i></a>
+                    <a class="btn btn-outline" id="brown" href="#multi-selections" data-slide="next"><i
+                            class="fa fa-chevron-right fa-lg"></i></a>
+                </div>
+            </div>
+            <br />
+            <!--/.Controls-->
+            <div class="carousel-inner" role="listbox">
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/Melting pop.jpg">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">The Melting Pot</h4>
+                                <br />
+                                <p class="card-text">CUISINES: American.
+                                </p>
+                                <br />
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/mediterranean.jpg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">Caspian Cafe </h4>
-                              <br />
-                              <p class="card-text">CUISINES:
-                                  Mediterranean, Greek, Middle Eastern.
-                              </p>
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/mediterranean.jpg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">Caspian Cafe </h4>
+                                <br />
+                                <p class="card-text">CUISINES:
+                                    Mediterranean, Greek, Middle Eastern.
+                                </p>
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/bakery.jpeg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">Marigold's Bakery
-                              </h4>
-                              <br />
-                              <p class="card-text"> CUISINES: French, American, International.
-                              </p>
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/bakery.jpeg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">Marigold's Bakery
+                                </h4>
+                                <br />
+                                <p class="card-text"> CUISINES: French, American, International.
+                                </p>
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/pizza_fresca.jpg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">Pizzeria Rustica</h4>
-                              <br />
-                              <p class="card-text">CUISINES:
-                                  Italian, Napolitan Pizza</p>
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/pizza_fresca.jpg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">Pizzeria Rustica</h4>
+                                <br />
+                                <p class="card-text">CUISINES:
+                                    Italian, Napolitan Pizza</p>
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-              </div>
-              <!--/.First slide-->
+                </div>
+                <!--/.First slide-->
 
-              <!--Second slide-->
-              <div class="carousel-item">
+                <!--Second slide-->
+                <div class="carousel-item">
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="images/vietnam.jpg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">503W</h4>
-                              <br />
-                              <p class="card-text">CUISINES:
-                                  Asian fusion</p>
-                              <br />
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="images/vietnam.jpg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">503W</h4>
+                                <br />
+                                <p class="card-text">CUISINES:
+                                    Asian fusion</p>
+                                <br />
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/BURGUER.jpeg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">4 by Brother Luck</h4>
-                              <br />
-                              <p class="card-text">CUISINES:
-                                  Native American</p>
-                              <br />
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/BURGUER.jpeg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">4 by Brother Luck</h4>
+                                <br />
+                                <p class="card-text">CUISINES:
+                                    Native American</p>
+                                <br />
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="/images/beer.jpg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">Brass Brewing Co.</h4>
-                              <br />
-                              <p class="card-text">Brewery dedicated to all style of sour beer</p>
-                              <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="/images/beer.jpg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">Brass Brewing Co.</h4>
+                                <br />
+                                <p class="card-text">Brewery dedicated to all style of sour beer</p>
+                                <a class="btn btn-warning" id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="col-md-3" style="float:left">
-                      <div class="card mb-2" style="height: 25rem;">
-                          <img class="card-img-top" height="200" src="images/seafood.jpg" alt="Card image cap">
-                          <div class="card-body" id="brown">
-                              <h4 class="card-title">Piglatin Cocina</h4>
-                              <br />
-                              <p class="card-text">CUISINES:
-                                  Latin American</p>
-                              <br />
-                              <a class="btn btn-warning " id="brown"><strong>Explore</strong></a>
-                          </div>
-                      </div>
-                  </div>
+                    <div class="col-md-3" style="float:left">
+                        <div class="card mb-2" style="height: 25rem;">
+                            <img class="card-img-top" height="200" src="images/seafood.jpg" alt="Card image cap">
+                            <div class="card-body" id="brown">
+                                <h4 class="card-title">Piglatin Cocina</h4>
+                                <br />
+                                <p class="card-text">CUISINES:
+                                    Latin American</p>
+                                <br />
+                                <a class="btn btn-warning " id="brown"><strong>Explore</strong></a>
+                            </div>
+                        </div>
+                    </div>
 
-              </div>
-              <!--/.Second slide-->
+                </div>
+                <!--/.Second slide-->
 
-          </div>
+            </div>
 
-      </div>
+        </div>
 
-  </div>
-  <br />
+    </div>
+    <br />
     <!--Jumbotron:How we work------------------>
-    <div class="jumbotron jumbotron-fluid" id="jumbotron1">
+    <div class="jumbotron jumbotron-fluid d-none d-sm-block" id="jumbotron2">
         <div class="container">
             <div class="col-md-12 text-left">
                 <h2 id="brown">How do we work?</h2>
             </div>
+            <br />
 
             <div class="row" id="brown">
                 <div class="col-12 col-sm-3">
@@ -469,8 +475,7 @@
                     <p>Save delicious food and also your money</p>
                 </div>
                 <div class="col-12 col-sm-3">
-                    <img src="/images/leftover.png" class="img-fluid mb-2" style="height: 10rem;"
-                        alt="Responsive image">
+                    <img src="/images/bag.png" class="img-fluid mb-2" style="height: 10rem;" alt="Responsive image">
                     <h4 class="text-left"><strong>Magic bag</strong></h4>
                     <p>Start rescuing delicious, unsold food from local cafes, stores and restaurants.</p>
                 </div>
@@ -490,84 +495,83 @@
             </div>
         </div>
     </div>
-    <br/>
     <!-- Business --------------------------->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <h2 id="brown"> Are you a business owner?</h2>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <div class="col-12 col-sm-6">
-                <div class="card w-100 h-100" id="bssCard">
-                    <div class="card-header" id="bssCardHeader">
-                        <h3>Became a partner</h3> 
-                    </div>
-                    <div class="card-body">
-                        <p>Tell us more about you and we will contact you as soon as possible</p>
-                        <a href="#" class="col-md-12 btn btn-warning text-uppercase text-center"><strong>See more information</strong></a>
-                    </div>
-                    <div class="card-header" id="bssCardHeader">
-                        <h3>Already a member</h3> 
-                    </div>
-                    <div class="card-body">
-                        <p>Log in to myLEFTOVERS and contact us by Chate</p>
-                        <a href="#" class="col-md-12 btn btn-warning text-uppercase text-center"><strong>Log in to myLEFTOVERS</strong></a>
+    <div class="jumbotron jumbotron-fluid" id="jumbotron3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <h2 id="brown"> Are you a business owner?</h2>
+                </div>
+                <br />
+                <br />
+                <br />
+                <div class="col-12 col-sm-6">
+                    <div class="card w-100 h-100" id="bssCard">
+                        <div class="card-header" id="bssCardHeader">
+                            <h3>Became a partner</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Tell us more about you and we will contact you as soon as possible</p>
+                            <a href="/business.html"
+                                class="col-md-12 btn btn-warning text-uppercase text-center"><strong>See more
+                                    information</strong></a>
+                        </div>
+                        <div class="card-header" id="bssCardHeader">
+                            <h3>Already a partner</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Log in to myLEFTOVERS and contact us by chate</p>
+                            <a href="/bsslogin.html"
+                                class="col-md-12 btn btn-warning text-uppercase text-center"><strong>Log in to
+                                    myLEFTOVERS</strong></a>
+                        </div>
+
                     </div>
 
                 </div>
+                <div class="col-12 col-sm-6 d-none d-sm-block">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img src="images/store-restaurant.jpeg" class=" align-self-start mr-3"
+                                style="height: 8rem;width: 6rem;" alt="Restaurants" />
+                            <div class="media-body">
+                                <h4 class="mt-0 mb-1" id="brown"><strong>For Restaurants</strong> </h4>
+                                <p>Introduce yourself to locals who are yet to discover you, and stand out by showing
+                                    that
+                                    sustainability is high on your agenda.</p>
+                            </div>
+                        </li>
+                        <br />
+                        <li class="media">
+                            <img src="/images/store-grocery.jpeg" class=" align-self-start mr-3"
+                                style="height: 8rem; width: 6rem;" alt="Grocery">
+                            <div class="media-body">
+                                <h4 class="mt-0 mb-1" id="brown"><strong>For Grocery stores</strong></h4>
+                                <p>No one likes to see perfectly good food go uneaten. Box up surplus items, and give
+                                    local
+                                    customers a delicious, feel-good surprise.</p>
+                            </div>
+                        </li>
+                        <br />
+                        <li class="media">
+                            <img src="images/store-bakery.jpeg" class="align-self-start mr-3"
+                                style="height: 8rem; width: 6rem;" alt="Bakeries">
+                            <div class="media-body">
+                                <h4 class="mt-0 mb-1" id="brown"><strong>For Bakeries</strong></h4>
+                                Navigate the unpredictability of footfall, cut back on food waste costs, and make your
+                                business known to new local customers - all with an easy-to-use system that won’t
+                                interrupt
+                                day-to-day operations.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
-            <div class="col-12 col-sm-6">
-                <ul class="list-unstyled">
-                    <li class="media">
-                        <img src="images/store-restaurant.jpeg" class=" align-self-start mr-3"
-                            style="height: 8rem;width: 6rem;" alt="Restaurants" />
-                        <div class="media-body">
-                            <h4 class="mt-0 mb-1" id="brown"><strong>For Restaurants</strong> </h4>
-                            <p>Introduce yourself to locals who are yet to discover you, and stand out by showing that
-                                sustainability is high on your agenda.</p>
-                        </div>
-                    </li>
-                    <br/>
-                    <li class="media">
-                        <img src="/images/store-grocery.jpeg" class=" align-self-start mr-3"
-                            style="height: 8rem; width: 6rem;" alt="Grocery">
-                        <div class="media-body">
-                            <h4 class="mt-0 mb-1" id="brown"><strong>For Grocery stores</strong></h4>
-                            <p>No one likes to see perfectly good food go uneaten. Box up surplus items, and give local
-                                customers a delicious, feel-good surprise.</p>
-                        </div>
-                    </li>
-                    <br/>
-                    <li class="media">
-                        <img src="images/store-bakery.jpeg" class="align-self-start mr-3"
-                            style="height: 8rem; width: 6rem;" alt="Bakeries">
-                        <div class="media-body">
-                            <h4 class="mt-0 mb-1" id="brown"><strong>For Bakeries</strong></h4>
-                            Navigate the unpredictability of footfall, cut back on food waste costs, and make your
-                            business known to new local customers - all with an easy-to-use system that won’t interrupt
-                            day-to-day operations.
-                        </div>
-                    </li>
-                </ul>
-            </div>
-         
+
         </div>
-  
-
-
-
-
-
     </div>
 
-
-    </div>
-    <br />
-    <hr />
     <!--Footer--------------------------------->
     <footer class="site-footer">
         <div class="container">
@@ -575,7 +579,7 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>General</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="/SignIn.html">Sign Up</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Help Center</a></li>
@@ -593,9 +597,9 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>For Business</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Leftovers and Business</a></li>
-                        <li><a href="#">Content Guidelines</a></li>
-                        <li><a href="#">Ad Choices</a></li>
+                        <li><a href="/business.html">Leftovers and Business</a></li>
+                        <li><a href="/business.html">Content Guidelines</a></li>
+                        <li><a href="/business.html">Ad Choices</a></li>
                     </ul>
                 </div>
                 <div class="col-4 col-sm-2 offset-1">
