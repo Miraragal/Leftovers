@@ -1,147 +1,157 @@
-body{
-    font-family: "Open Sans",sans-serif;
-    color: #454140;
-    
-}
-
-h1{
-    font-family:'Limelight', cursive;
-    color: #454140;
-}
-
-
-h2{
-    font-family:'Limelight', cursive;
-    font-size: 10;
-    color: #454140;
-    
-    
-}
-
-h3{    
-    font-family: "Open Sans",sans-serif;
-    font-size: 15;
-    font-style: inherit;
-    text-align: left;
-  
-}
-
-h5{
-    font-family:'Limelight', cursive;
-    font-size: small;
-    font-style: inherit;
-    color: #454140;
-}
-
-#brown { color:#454140; }
-#blue { color:#8EB1C7}
-#red {color: #EB4511}
-#silver {color: #C1BFB5}
-#white {color:#FEFDFF}
-#verde {color:#00a59b }
-#naranja {color:#f7a11a}
-
-
-    .navbar{
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    background-color:#FEFDFF;
+    body {
+        font-family: "Open Sans", sans-serif;
+        color: #454140;
     }
     
-    .navbar .nav-item{
-
+    h1 {
+        font-family: 'Limelight', cursive;
+        color: #454140;
+    }
+    
+    h2 {
+        font-family: 'Limelight', cursive;
+        font-size: 10;
+        color: #454140;
+    }
+    
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15;
+        font-style: inherit;
+        text-align: left;
+    }
+    
+    h5 {
+        font-family: 'Limelight', cursive;
+        font-size: small;
+        font-style: inherit;
+        color: #454140;
+    }
+    
+    #brown {
+        color: #454140;
+    }
+    
+    #blue {
+        color: #8EB1C7
+    }
+    
+    #red {
+        color: #EB4511
+    }
+    
+    #silver {
+        color: #C1BFB5
+    }
+    
+    #white {
+        color: #FEFDFF
+    }
+    
+    #verde {
+        color: #00a59b
+    }
+    
+    #naranja {
+        color: #f7a11a
+    }
+    
+    .navbar {
+        margin: 0;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #FEFDFF;
+    }
+    
+    .navbar .nav-item {
         margin: 0;
         padding: 5px;
         font-size: 18px;
-        background-color:#FEFDFF;
-        color:#454140;  
+        background-color: #FEFDFF;
+        color: #454140;
+    }
     
-        }
-
     .dropdown .dropbtn {
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    background-color:#FEFDFF;
-    color:#454140;    
+        margin: 0;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #FEFDFF;
+        color: #454140;
     }
-
+    
     .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#FEFDFF;
-    z-index: 1;
-    border-radius: 5px;
-    } 
+        display: none;
+        position: absolute;
+        background-color: #FEFDFF;
+        z-index: 1;
+        border-radius: 5px;
+    }
+    
     .dropdown-content a {
-    float: none;
-    padding: 12px 16px;
-    display: block;
-    text-align:left;
-    color: #454140;
+        float: none;
+        padding: 12px 16px;
+        display: block;
+        text-align: left;
+        color: #454140;
     }
-  
+    
     .dropdown:hover .dropdown-content {
-    display: block;
-    border-color: #8EB1C7;
-    }  
-  
-    #checkout{
-      background-color:#5eb9b3; 
+        display: block;
+        border-color: #8EB1C7;
     }
-
-    #checkout:hover{
+    
+    #checkout {
+        background-color: #5eb9b3;
+    }
+    
+    #checkout:hover {
         background-color: #00a59b;
     }
-
-    #cart{
-        background-color:#e2af5c ;
-    }
-
-    #cart:hover{
-        background-color:#f7a11a;
+    
+    #cart {
+        background-color: #e2af5c;
     }
     
-    #jumbotron1{
-        background-color:#C1BFB5;
+    #cart:hover {
+        background-color: #f7a11a;
+    }
+    
+    #jumbotron1 {
+        background-color: #C1BFB5;
         font-size: 20px;
         margin: 0;
     }
-
-    #jumbotron2{
+    
+    #jumbotron2 {
         background-color: #F7D488;
         font-size: 20px;
         margin: 0;
     }
-
-    #jumbotron3{
-        background-image: linear-gradient( white,  #C1BFB5);
+    
+    #jumbotron3 {
+        background-image: linear-gradient( white, #C1BFB5);
         font-size: 20px;
         margin: 0;
     }
-
-
+    
     .form-content {
         background-color: white;
         color: white;
         height: fit-content;
         width: fit-content;
-        
     }
     
-    .carousel-item{
+    .carousel-item {
         height: fit-content;
         width: fit-content;
-        
     }
-
-    .media{
+    
+    .media {
         font-size: small;
     }
-
-    #bssCard{
-        background-color:#454140 ;
+    
+    #bssCard {
+        background-color: #454140;
         color: silver;
         display: flex;
     }
@@ -151,59 +161,71 @@ h5{
         padding: 20px;
         font-size: 14px;
         color: #454140;
-        text-align:left;
+        text-align: left;
         position: center;
     }
+    
     a {
-        color:#454140;
+        color: #454140;
     }
-
-    #favorites{
-            margin-top: 50px;
-            position: relative;
-            text-align: center;
-            color: #454140;
-          
+    
+    #favorites {
+        margin-top: 50px;
+        position: relative;
+        text-align: center;
+        color: #454140;
     }
+    
     .centered {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+    }
     
-    #jumbotronFav2{
+    #jumbotronFav2 {
         background-color: #F7D488;
         font-size: 20px;
         margin: 0;
-
-
     }
     
-    #bssjumbotron{
-
+    #bssjumbotron {
         background-color: #C3D1E3;
         font-size: 25px;
         margin: 0;
-
-    }
-
-    #bssjumbotron2{
-
-        background-color: #C3D1E3;
-        font-size: 15px;
-
     }
     
-
-
-    #cardBss{
-        background-color:#454140 ;
+    #bssjumbotron2 {
+        background-color: #C3D1E3;
+        font-size: 25px;
+        margin: 0;
+    }
+    
+    #cardBss {
+        background-color: #454140;
         color: silver;
     }
     
-    #cardBssHeader{
-        background-color:white;
-        
+    #cardBssHeader {
+        background-color: white;
     }
     
+    #loginNavbar {
+        background-color: #F7D488;
+        ;
+    }
+    
+    #login-image {
+        background-image: url("/images/background2.png");
+        height: 750px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .input-eye-icon {
+        float: right;
+        margin-right: 1rem;
+        margin-top: -1.2rem;
+    }
