@@ -1,6 +1,5 @@
-# Leftovers
+# Leftovers <img align="right" src="https://github.com/Miraragal/Leftovers/blob/master/images/Logo.png" width="47px"/>
 
-## About
 An unsold-food Reservation App
 
 Leftover is an app that has a smooth user interface and functions as a Restaurant Food Reservation App, where we connect our users with unsold delicious food from a variety of stores and restaurants.
