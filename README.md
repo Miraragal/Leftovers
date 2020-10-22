@@ -1,4 +1,4 @@
-# Leftovers <img align="right" src="https://github.com/Miraragal/Leftovers/blob/master/images/Logo.png" width="47px"/>
+# Leftovers <img align="right" src="https://github.com/Miraragal/Leftovers/blob/master/images/Logo.png" width="87px"/>
 
 An unsold-food Reservation App
 
